@@ -1,0 +1,45 @@
+html, body {
+    font-family: 'Inter', sans-serif;
+    /* padding: 0;
+    margin: 0; */
+}
+
+
+.accent-main {
+    background-color: rgb(101, 93, 218);
+}
+
+@media (min-width: 992px) { 
+    .accent-main {
+        border-top: 10px solid rgb(101, 93, 218);
+        border-bottom: 10px solid rgb(101, 93, 218);
+        border-top-left-radius: 70px;
+        border-bottom-left-radius: 70px;
+    }
+}
+
+.btn-get-started {
+    color: white;
+    background-color: none;
+}
+
+.btn-get-started:hover {
+    color: rgb(95, 88, 194);
+    background-color: white;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.btn-lg {
+    border-radius: 50px !important;
+}
+
+.btn-accent {
+    background-color: rgb(101, 93, 218);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+}
