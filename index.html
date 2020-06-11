@@ -5,70 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolumbao</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9609ce59d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-    <!-- <nav class="navbar navbar-expand-sm fixed-top">
-        <a class="navbar-brand" href="#">Kolumbao</a>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo_nom.png" height="50" alt="">
+        </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
+                    <a class="nav-link" href="#features">Features</a>
                 </li>
             </ul>
-            <button type="button" name="" id="" class="btn btn-get-started">Get started</button>
-        </div>
-    </nav> -->
-
-    <div class="container-fluid">
-        <div class="row vh-100">
-            <div class="col-lg-8 pl-5 my-auto">
-                <h1 class="display-4">Kolumbao</h1>
-                <p class="lead">A hassle free Discord bot to connect with other servers, without even being there!</p>
-                <a class="btn btn-lg text-light btn-accent" href="https://discord.com/api/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot" role="button"
-                   target="_blank" rel="noopener noreferrer">
-                    Invite to Discord <i class="fab fa-discord"></i>
+            <div>
+                <a href="https://discord.gg/9UBdZHu" class="btn btn-outline-secondary-1 my-2 my-sm-0" role="button">
+                    <i class="far fa-question-circle"></i> Support
                 </a>
-                <a class="btn btn-lg btn-light" href="https://ko-fi.com/discordstars" role="button">
-                    Donate <i class="fas fa-donate"></i>
+                <a class="btn btn-outline-accent-1 my-2 my-sm-0" role="button" href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">
+                    <i class="fab fa-discord"></i> Invite
                 </a>
             </div>
-            <div class="col-lg-4 accent-main d-flex align-items-center pl-5">
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" id="main">
+            <div class="col-md-9 pl-sm-5 d-flex align-items-center">
                 <div>
-                    <div class="row pb-3">
-                        <a class="btn btn-lg btn-light disabled" href="#" role="button">
-                            Help menu <i class="fas fa-question-circle"></i>
-                            <span class="badge">Soon!</span>
+                    <h1 class="display-3">Kolumbao</h1>
+                    <p class="lead">Kolumbao is a Discord bot that connects guilds with shared channels.</p>
+                    <div>
+                        <a class="btn btn-lg btn-accent-1" role="button" href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">
+                            <i class="fab fa-discord"></i> Invite to Discord
+                        </a>
+                        <a href="https://discord.gg/9UBdZHu" class="btn btn-lg btn-secondary-1" role="button">
+                            <i class="far fa-question-circle"></i> Join the support server
+                        </a>
+                        <a href="https://ko-fi.com/discordstars" class="btn btn-lg btn-secondary-1" role="button">
+                            <i class="fas fa-donate"></i> Donate
                         </a>
                     </div>
-                    <div class="row pb-3">
-                        <a class="btn btn-lg btn-light disabled" href="#" role="button">
-                            How it works <i class="fas fa-code-branch"></i>
-                            <span class="badge">Soon!</span>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a class="btn btn-lg btn-light" href="https://github.com/Kolumbao/translations" target="_blank" rel="noopener noreferrer" role="button"
-                           data-toggle="tooltip" data-placement="right" title="This will take you to GitHub">
-                            Translate <i class="fas fa-globe-africa"></i>
-                        </a>
-                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+                <iframe src="https://discordapp.com/widget?id=457205628754984960&theme=dark" width="100%" height="90%" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-fluid py-3" id="features">
+        <h1>Features <a href="#features"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
+        <hr>
+        <div class="card-columns">
+            <div class="card bg-accent-1">
+                <div class="card-header"><i class="fas fa-exclamation-circle"></i> Coming soon</div>
+                <img class="card-img-top" src="https://i.discord.fr/uv0K.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Community search
+                    </h4>
+                    <p class="card-text">
+                        Using the upcoming <strong>kb!search</strong> command,
+                        you'll be able to search through the possible channels
+                        that Kolumbao provides.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-accent-1">
+                <div class="card-header"><i class="fas fa-exclamation-circle"></i> Coming soon</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Custom channels
+                    </h4>
+                    <p class="card-text">
+                        Alongside the new <strong>kb!search</strong> command,
+                        you'll be able to create custom channels, either public
+                        or private password-protected channels. A way for two
+                        servers to connect, no hassle, no fees!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.discord.fr/cCwN.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Helpful setup</h4>
+                    <p class="card-text">
+                        Never worry about starting using the bot, with our
+                        automatic guide and help message, you'll learn how to
+                        use the bot and how to set it up. However, if you ever 
+                        need our help, our support server is available to give
+                        you a helping hand <i class="fas fa-smile" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.discord.fr/CTWh.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Variety</h4>
+                    <p class="card-text">
+                        <strong>Kolumbao</strong> has a variety of channels,
+                        topics and supported languages (you can even translate
+                        into your own language). New topics are available by
+                        suggestion and a feature to create personalised private
+                        groups is coming soon.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.discord.fr/yd0e.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Explanation and rules
+                    </h4>
+                    <p class="card-text">
+                        Using the <strong>kb!explanation</strong> and <strong>kb!rules</strong>
+                        command, you can see the explanation for Kolumbao and
+                        the rules of the channel you're currently in.
+                    </p>
                 </div>
             </div>
         </div>
@@ -77,8 +139,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
-        $('a').tooltip({ boundary: 'window' })
-    </script>
 </body>
 </html>

@@ -1,45 +1,64 @@
+* {
+    --accent-0: #d9a566;
+    --accent-1: #d9309e; 
+    --accent-2: #4a1fa6;
+
+    --secondary-0: #4a1fa6;
+    --secondary-1: #0583f2;
+}
+
 html, body {
     font-family: 'Inter', sans-serif;
-    /* padding: 0;
-    margin: 0; */
-}
-
-
-.accent-main {
-    background-color: rgb(101, 93, 218);
-}
-
-@media (min-width: 992px) { 
-    .accent-main {
-        border-top: 10px solid rgb(101, 93, 218);
-        border-bottom: 10px solid rgb(101, 93, 218);
-        border-top-left-radius: 70px;
-        border-bottom-left-radius: 70px;
-    }
-}
-
-.btn-get-started {
-    color: white;
-    background-color: none;
-}
-
-.btn-get-started:hover {
-    color: rgb(95, 88, 194);
-    background-color: white;
+    /* font-size: 97%; */
 }
 
 .btn {
-    border-radius: 20px;
+    border-radius: 20px !important;
+    margin-bottom: 10px;
 }
 
 .btn-lg {
     border-radius: 50px !important;
+} 
+
+.btn-accent-1, .btn-outline-accent-1:hover, .bg-accent-1 {
+    color: var(--light);
+    background-color: var(--accent-1);
 }
 
-.btn-accent {
-    background-color: rgb(101, 93, 218);
+.btn-outline-accent-1 {
+    color: var(--accent-1);
+    border-color: var(--accent-1);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700 !important;
+.btn-secondary-1, .btn-outline-secondary-1:hover {
+    color: var(--light);
+    background-color: var(--secondary-1);
+}
+
+.btn-outline-secondary-1 {
+    color: var(--secondary-1);
+    border-color: var(--secondary-1);
+}
+
+
+#main {
+    background: rgb(217,165,102);
+    background: linear-gradient(rgba(217,165,102,1) 0%, rgba(217,48,158,1) 50%, rgba(74,31,166,1) 100%);
+}
+
+#main {
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    #main {
+        min-height: 50vh;
+        background: rgb(217,165,102);
+        background: linear-gradient(90deg, rgba(217,165,102,1) 0%, rgba(217,48,158,1) 50%, rgba(74,31,166,1) 100%);
+    }
+
+    .btn {
+        margin-bottom: 0;
+    }
 }
