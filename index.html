@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top shadow">
         <a class="navbar-brand" href="#">
             <img src="/img/logo_nom.png" height="50" alt="">
         </a>
@@ -23,6 +23,9 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#channels" class="nav-link">Channels</a>
                 </li>
             </ul>
             <div>
@@ -61,11 +64,23 @@
         </div>
     </div>
 
+    <div class="container py-3" id="new">
+        <div class="alert alert-info shadow" role="alert">
+            <h4 class="alert-heading"><i class="fas fa-ad"></i> Advertising channel!</h4>
+            <p>
+                <strong>#kb-ad</strong> has been added, allowing you to advertise
+                your server to countless other servers!
+            </p>
+            <hr>
+            <p class="mb-0">Get it today with <strong>kb!wizard</strong></p>
+        </div>
+        <!-- <hr> -->
+    </div>
     
-    <div class="container-fluid py-3" id="features">
+    <div class="container-fluid text-center py-3" id="features">
         <h1>Features <a href="#features"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
         <hr>
-        <div class="card-columns">
+        <div class="card-columns text-left">
             <div class="card bg-accent-1">
                 <div class="card-header"><i class="fas fa-exclamation-circle"></i> Coming soon</div>
                 <img class="card-img-top" src="https://i.discord.fr/uv0K.png" alt="">
@@ -112,11 +127,11 @@
                 <div class="card-body">
                     <h4 class="card-title">Variety</h4>
                     <p class="card-text">
-                        <strong>Kolumbao</strong> has a variety of channels,
-                        topics and supported languages (you can even translate
-                        into your own language). New topics are available by
-                        suggestion and a feature to create personalised private
-                        groups is coming soon.
+                        <a href="#channels"><strong>Kolumbao</strong> has a
+                        variety of channels</a>, topics and supported languages
+                        (you can even translate into your own language). New
+                        topics are available by suggestion and a feature to
+                        create personalised private groups is coming soon.
                     </p>
                 </div>
             </div>
@@ -135,6 +150,104 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid text-center py-3" id="channels">
+        <h1>Channels <a href="#channels"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
+        <hr>
+        <div class="card-columns text-left">
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <img class="card-img-top" src="/img/logo_nom_blanc_degrade.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-envelope"></i> Kolumbao General
+                    </h4>
+                    <p class="card-text">
+                        The main channel for Kolumbao, where most topics can be
+                        discussed! <em>The original Kolumbao channel, as good as
+                        it always has been.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> Français</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-envelope"></i> Kolumbao Général / Français
+                    </h4>
+                    <p class="card-text">
+                        Ce salon est dédié pour la langue française
+                        inter-serveur de Kolumbao. <em>Le nouveau salon de
+                        Kolumbao pour les francophones!</em>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-exclamation-triangle"></i> Kolumbao NSFW
+                    </h4>
+                    <p class="card-text">
+                        The main NSFW channel for Kolumbao. Any not-safe-for-work
+                        content should go here, as long as it abides by Discord's
+                        Terms of Service.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-ad"></i> Kolumbao Ads
+                    </h4>
+                    <p class="card-text">
+                        The main channel for Kolumbao, where most topics can be
+                        discussed! <em>The original Kolumbao channel, as good as
+                        it always has been.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-paint-brush"></i> Kolumbao Art
+                    </h4>
+                    <p class="card-text">
+                        The art channel for Kolumbao. Any art, physical and
+                        digital, is permitted here! Discuss and share your works.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> Français</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-theater-masks"></i> Kolumbao Roleplay
+                    </h4>
+                    <p class="card-text">
+                        The roleplay channel for Kolumbao. Live out your
+                        fantasies in this channel with other users!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> Español</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-envelope"></i> Kolumbao Español
+                    </h4>
+                    <p class="card-text">
+                        Este salón está dedicado a las partes en español de
+                        Kolumbao.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
