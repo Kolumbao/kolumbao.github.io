@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e9609ce59d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa-bounce.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top shadow">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top shadow">
         <a class="navbar-brand" href="#">
             <img src="/img/logo_nom.png" height="50" alt="">
         </a>
@@ -39,12 +40,13 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row" id="main">
+    <div class="container-fluid" id="main">
+        <div class="row" style="padding-top: 76px; height: 90vh;">
             <div class="col-md-9 pl-sm-5 d-flex align-items-center">
                 <div>
-                    <h1 class="display-3">Kolumbao</h1>
-                    <p class="lead">Kolumbao is a Discord bot that connects guilds with shared channels.</p>
+                    <h1 class="display-3" style="font-weight: 500;">Kolumbao</h1>
+                    <p class="lead" style="font-weight: 400;">Kolumbao is a Discord bot that connects guilds with shared channels.</p>
+                    
                     <div>
                         <a class="btn btn-lg btn-accent-1" role="button" href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">
                             <i class="fab fa-discord"></i> Invite to Discord
@@ -62,6 +64,11 @@
                 <iframe src="https://discordapp.com/widget?id=457205628754984960&theme=dark" width="100%" height="90%" allowtransparency="true" frameborder="0"></iframe>
             </div>
         </div>
+        <div class="row" style="height: 10vh;">
+            <div class="col-12 d-flex align-items-center">
+                <a id="arrow-down" class="btn" href="#arrow-down" role="button" style="width: 100%;"><i class="fa fa-arrow-down fa-bounce fa-2x text-light" aria-hidden="true"></i> </a>
+            </div>
+        </div>
     </div>
 
     <div class="container py-3" id="new">
@@ -77,19 +84,24 @@
         <!-- <hr> -->
     </div>
     
-    <div class="container-fluid text-center py-3" id="features">
+    <div class="container text-center py-3" id="features">
         <h1>Features <a href="#features"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
         <hr>
         <div class="card-columns text-left">
-            <div class="card bg-accent-1">
-                <div class="card-header"><i class="fas fa-exclamation-circle"></i> Coming soon</div>
-                <img class="card-img-top" src="https://i.discord.fr/uv0K.png" alt="">
+            <div class="card">
+                <a href="https://top.gg/bot/705422266649018398" >
+                    <img width="100%" src="https://top.gg/api/widget/705422266649018398.svg" alt="Kolumbao" />
+                </a>
+            </div>
+            <div class="card bg-success text-light">
+                <div class="card-header">&#x2728; Brand new!</div>
+                <img class="card-img-top" src="https://i.discord.fr/oMJb.png" alt="">
                 <div class="card-body">
                     <h4 class="card-title">
                         Community search
                     </h4>
                     <p class="card-text">
-                        Using the upcoming <strong>kb!search</strong> command,
+                        Using the new <strong>kb!search</strong> command,
                         you'll be able to search through the possible channels
                         that Kolumbao provides.
                     </p>
@@ -151,7 +163,7 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center py-3" id="channels">
+    <div class="container text-center py-3" id="channels">
         <h1>Channels <a href="#channels"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
         <hr>
         <div class="card-columns text-left">
@@ -217,18 +229,6 @@
                     <p class="card-text">
                         The art channel for Kolumbao. Any art, physical and
                         digital, is permitted here! Discuss and share your works.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header"><i class="fas fa-language"></i> Français</div>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <i class="fas fa-theater-masks"></i> Kolumbao Roleplay
-                    </h4>
-                    <p class="card-text">
-                        The roleplay channel for Kolumbao. Live out your
-                        fantasies in this channel with other users!
                     </p>
                 </div>
             </div>

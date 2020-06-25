@@ -9,6 +9,7 @@
 
 html, body {
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
     /* font-size: 97%; */
 }
 
@@ -45,10 +46,6 @@ html, body {
 #main {
     background: rgb(217,165,102);
     background: linear-gradient(rgba(217,165,102,1) 0%, rgba(217,48,158,1) 50%, rgba(74,31,166,1) 100%);
-}
-
-#main {
-    min-height: 100vh;
 }
 
 @media (min-width: 768px) {
