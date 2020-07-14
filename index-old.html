@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolumbao</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e9609ce59d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa-bounce.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top shadow">
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo_nom.png" height="50" alt="">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#channels" class="nav-link">Channels</a>
+                </li>
+            </ul>
+            <div>
+                <a href="https://discord.gg/9UBdZHu" class="btn btn-outline-secondary-1 my-2 my-sm-0" role="button">
+                    <i class="far fa-question-circle"></i> Support
+                </a>
+                <a class="btn btn-outline-accent-1 my-2 my-sm-0" role="button" href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">
+                    <i class="fab fa-discord"></i> Invite
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="main">
+        <div class="row" style="padding-top: 76px; height: 90vh;">
+            <div class="col-md-9 pl-sm-5 d-flex align-items-center">
+                <div>
+                    <h1 class="display-3" style="font-weight: 500;">Kolumbao</h1>
+                    <p class="lead" style="font-weight: 400;">Kolumbao is a Discord bot that connects guilds with shared channels.</p>
+                    
+                    <div>
+                        <a class="btn btn-lg btn-accent-1" role="button" href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">
+                            <i class="fab fa-discord"></i> Invite to Discord
+                        </a>
+                        <a href="https://discord.gg/9UBdZHu" class="btn btn-lg btn-secondary-1" role="button">
+                            <i class="far fa-question-circle"></i> Join the support server
+                        </a>
+                        <a href="https://ko-fi.com/discordstars" class="btn btn-lg btn-secondary-1" role="button">
+                            <i class="fas fa-donate"></i> Donate
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center">
+                <iframe src="https://discordapp.com/widget?id=457205628754984960&theme=dark" width="100%" height="90%" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="row" style="height: 10vh;">
+            <div class="col-12 d-flex align-items-center">
+                <a id="arrow-down" class="btn" href="#arrow-down" role="button" style="width: 100%;"><i class="fa fa-arrow-down fa-bounce fa-2x text-light" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3" id="new">
+        <div class="alert alert-info shadow" role="alert">
+            <h4 class="alert-heading"><i class="fas fa-ad"></i> Advertising channel!</h4>
+            <p>
+                <strong>#kb-ad</strong> has been added, allowing you to advertise
+                your server to countless other servers!
+            </p>
+            <hr>
+            <p class="mb-0">Get it today with <strong>kb!wizard</strong></p>
+        </div>
+        <!-- <hr> -->
+    </div>
+    
+    <div class="container text-center py-3" id="features">
+        <h1>Features <a href="#features"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
+        <hr>
+        <div class="card-columns text-left">
+            <div class="card">
+                <a href="https://top.gg/bot/705422266649018398" >
+                    <img width="100%" src="https://top.gg/api/widget/705422266649018398.svg" alt="Kolumbao" />
+                </a>
+            </div>
+            <div class="card bg-success text-light">
+                <div class="card-header">&#x2728; Brand new!</div>
+                <img class="card-img-top" src="https://i.discord.fr/oMJb.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Community search
+                    </h4>
+                    <p class="card-text">
+                        Using the new <strong>kb!search</strong> command,
+                        you'll be able to search through the possible channels
+                        that Kolumbao provides.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-accent-1">
+                <div class="card-header"><i class="fas fa-exclamation-circle"></i> Coming soon</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Custom channels
+                    </h4>
+                    <p class="card-text">
+                        Alongside the new <strong>kb!search</strong> command,
+                        you'll be able to create custom channels, either public
+                        or private password-protected channels. A way for two
+                        servers to connect, no hassle, no fees!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.discord.fr/cCwN.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Helpful setup</h4>
+                    <p class="card-text">
+                        Never worry about starting using the bot, with our
+                        automatic guide and help message, you'll learn how to
+                        use the bot and how to set it up. However, if you ever 
+                        need our help, our support server is available to give
+                        you a helping hand <i class="fas fa-smile" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.discord.fr/CTWh.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Variety</h4>
+                    <p class="card-text">
+                        <a href="#channels"><strong>Kolumbao</strong> has a
+                        variety of channels</a>, topics and supported languages
+                        (you can even translate into your own language). New
+                        topics are available by suggestion and a feature to
+                        create personalised private groups is coming soon.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.discord.fr/yd0e.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Explanation and rules
+                    </h4>
+                    <p class="card-text">
+                        Using the <strong>kb!explanation</strong> and <strong>kb!rules</strong>
+                        command, you can see the explanation for Kolumbao and
+                        the rules of the channel you're currently in.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center py-3" id="channels">
+        <h1>Channels <a href="#channels"><i class="fas fa-link" style="font-size:0.5em;"></i></a></h1>
+        <hr>
+        <div class="card-columns text-left">
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <img class="card-img-top" src="/img/logo_nom_blanc_degrade.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-envelope"></i> Kolumbao General
+                    </h4>
+                    <p class="card-text">
+                        The main channel for Kolumbao, where most topics can be
+                        discussed! <em>The original Kolumbao channel, as good as
+                        it always has been.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> Français</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-envelope"></i> Kolumbao Général / Français
+                    </h4>
+                    <p class="card-text">
+                        Ce salon est dédié pour la langue française
+                        inter-serveur de Kolumbao. <em>Le nouveau salon de
+                        Kolumbao pour les francophones!</em>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-exclamation-triangle"></i> Kolumbao NSFW
+                    </h4>
+                    <p class="card-text">
+                        The main NSFW channel for Kolumbao. Any not-safe-for-work
+                        content should go here, as long as it abides by Discord's
+                        Terms of Service.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-ad"></i> Kolumbao Ads
+                    </h4>
+                    <p class="card-text">
+                        The advertising channel for Kolumbao, where advertisements for servers can be found!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> English</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-paint-brush"></i> Kolumbao Art
+                    </h4>
+                    <p class="card-text">
+                        The art channel for Kolumbao. Any art, physical and
+                        digital, is permitted here! Discuss and share your works.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-language"></i> Español</div>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <i class="fas fa-envelope"></i> Kolumbao Español
+                    </h4>
+                    <p class="card-text">
+                        Este salón está dedicado a las partes en español de
+                        Kolumbao.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

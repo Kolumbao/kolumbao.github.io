@@ -13,49 +13,108 @@ html, body {
     /* font-size: 97%; */
 }
 
-.btn {
-    border-radius: 20px !important;
-    margin-bottom: 10px;
+.bold {
+    font-weight: 900;
 }
 
-.btn-lg {
-    border-radius: 50px !important;
-} 
+.box {
+  border-radius: 8px;
+  box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px;
+}
 
-.btn-accent-1, .btn-outline-accent-1:hover, .bg-accent-1 {
-    color: var(--light);
+.box > .card-header {
+  font-weight: medium;
+/*  font-family: 'Cascadia Code', monospace;*/
+  color: white;
+  background-color: #353839;
+  border: none;
+}
+
+.box > .card-footer::before {
+  content: 'Add me easily with (click to copy): ';
+}
+
+/*
+.copy {
+    cursor: pointer;
+}
+
+.copy::before {
+  color: black;
+  font-family: "Font Awesome 5 Free";
+  content: '\f0ea  ';
+  font-weight: 900;
+}
+
+code, pre {
+  margin: 2px;
+  padding: 5px;
+  background-color: lightgray;
+  border-color: 1px solid gray;
+  border-radius: 8px;
+  font-family: 'Cascadia Code', monospace;
+  color: #d9309e;
+}
+
+code:hover, pre:hover {
+  color: white;
+  background-color: #d9309e;
+}
+*/
+
+.theme {
     background-color: var(--accent-1);
 }
 
-.btn-outline-accent-1 {
-    color: var(--accent-1);
-    border-color: var(--accent-1);
+.container.bar, .container-fluid.bar {
+    font-size: 0.95em;
+    padding: 10px;
+    text-align: center;
 }
 
-.btn-secondary-1, .btn-outline-secondary-1:hover {
-    color: var(--light);
-    background-color: var(--secondary-1);
+.darkish {
+    color: #353839 !important;
 }
 
-.btn-outline-secondary-1 {
-    color: var(--secondary-1);
-    border-color: var(--secondary-1);
+.bg-darkish {
+    background-color: #353839;
+    color: lightgray;
 }
 
-
-#main {
-    background: rgb(217,165,102);
-    background: linear-gradient(rgba(217,165,102,1) 0%, rgba(217,48,158,1) 50%, rgba(74,31,166,1) 100%);
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-@media (min-width: 768px) {
-    #main {
-        min-height: 50vh;
-        background: rgb(217,165,102);
-        background: linear-gradient(90deg, rgba(217,165,102,1) 0%, rgba(217,48,158,1) 50%, rgba(74,31,166,1) 100%);
+.navbar-nav,
+.mr-auto {
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
+
+.preview {
+    padding: auto;
+    width: 100%;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.desc {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+    .desc {
+        padding-right: 5rem;
+        padding-left: 5rem;
     }
-
-    .btn {
-        margin-bottom: 0;
+    .desc.left {
+        text-align: right;
+        
+    }
+    
+    .preview {
+        max-width: none;
     }
 }
