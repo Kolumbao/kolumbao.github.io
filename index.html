@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/e9609ce59d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fa-bounce.css">
+    <link rel="stylesheet" href="ti.css">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +23,10 @@
     <meta name="theme-color" content="#d9309e">
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+   <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-darkish shadow">
        <div class="container">
             <a class="navbar-brand" href="#">
-                <img id="logo" class="d-sm-none d-block" src="img/logo.png" height="30" alt="">
+                <img id="logo" class="d-sm-none d-block" src="img/logo_transparent_png.png" height="30" alt="">
             </a>
             
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -35,49 +36,43 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <a class="navbar-brand" href="#">
-                       <img id="logo" class="d-none d-sm-block" src="img/logo.png" height="30" alt="">
+                       <img id="logo" class="d-none d-sm-block" src="img/logo_transparent_png.png" height="30" alt="">
                     </a>
                     <li class="nav-item my-auto">
-                        <a class="nav-link darkish" href="#features">Features</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item my-auto">
-                        <a class="nav-link darkish" href="#get-started">Installation</a>
+                        <a class="nav-link" href="#get-started">Installation</a>
                     </li>
                     <li class="nav-item my-auto">
-                        <a class="nav-link darkish" href="https://discord.gg/9UBdZHu"><i class="fab fa-discord fa-lg d-none d-sm-inline d-lg-none"></i> <span class="d-inline d-sm-none d-lg-inline">Support</span></a>
+                        <a class="nav-link" href="https://discord.gg/9UBdZHu"><i class="fab fa-discord fa-lg d-none d-sm-inline d-lg-none"></i> <span class="d-inline d-sm-none d-lg-inline">Support</span></a>
                     </li>
-                    
-<!--
-                    <li class="nav-item">
-                        <a href="#channels" class="nav-link darkish">Channels</a>
-                    </li>
--->
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid bar bg-darkish">
+    <div class="container-fluid bar bg-p">
         <i class="fas fa-cog"></i> Kolumbao is currently under rapid development. Head to the <a href="https://discord.gg/9UBdZHu">support server</a> for the latest news.
     </div>
     <div class="theme">
         <div class="container-fluid text-center p-5 text-white" id="lead">
-            <h1 class="display-4">Start talking</h1>
+            <h1 class="display-4 bold">Start talking</h1>
             <p class="pt-2">Kolumbao is a bot that allows users to communicate with each other without having to share any Discord servers.</p>
-            <a href="#get-started" class="btn btn-primary">Get started</a>
-            
-            
-<!--
-            <div class="row">
-                <div class="col-12 col-lg-6 p-5">
-                    <div class="card box shadow">
-                        <div class="card-body">
-                            <h1 class="card-title">Get started on your journey to connecting with others</h1>
-                            <a href="" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
+            <div class="row py-5">
+                <div class="col-12 col-lg-4">
+                    <h5>Messages</h5>
+                    <h2><span id="message-count">0</span></h2>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h5>Servers</h5>
+                    <h2><span id="server-count">0</span></h2>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h5>Channels</h5>
+                    <h2><span id="channel-count">0</span></h2>
                 </div>
             </div>
--->
+            <a href="#get-started" class="btn btn-primary">Get started</a>
         </div> 
     </div>
     
@@ -117,31 +112,31 @@
     </section>
     
     <section id="get-started">
-        <div class="bg-darkish text-white">
+        <div class="bg-darkish">
             <div class="container p-5">
                 <h1 class="pb-lg-4 text-center">Get started</h1>
                 <div class="container">
                     <div class="row d-flex py-3">
                         <div class="col-lg-6 desc left pb-3 pb-lg-0 order-0 order-lg-0">
                             <h2>1. Invite the bot</h2>
-                            <p>Firstly, <a href="http://invite.kolumbao.com/" target="_blank">invite the bot <i class="fas fa-xs fa-external-link-alt"></i></a> with the required permissions.</p>
+                            <p>Firstly, <a href="http://invite.kolumbao.com/" target="_blank">invite the bot <i class="fas fa-xs fa-external-link-alt" aria-hidden="true"></i></a> with the required permissions.</p>
                         </div>
                        <div class="col-lg-6 order-1 order-lg-1">
                             <img src="img/display/invite.png" alt="" class="preview">
                         </div>
                     </div>
-                    
+
                     <div class="row d-flex py-3">
                         <div class="col-lg-6 desc left pb-3 pb-lg-0 order-0 order-lg-0">
                             <h2>2. Check out <code>kb!setup</code></h2>
-                            <p>Take a look at <code>kb!setup</code> &ndash; a simple command that tells you everything you need to know.</p>
+                            <p>Take a look at <code>kb!setup</code> – a simple command that tells you everything you need to know.</p>
                         </div>
                        <div class="col-lg-6 order-1 order-lg-1">
                             <img src="img/display/setup.png" alt="" class="preview">
                         </div>
                     </div>
-                    
-                       <div class="row d-flex py-3 align-items-center">
+
+                    <div class="row d-flex py-3 align-items-center">
                         <div class="col-lg-6 desc left pb-3 pb-lg-0 order-0 order-lg-0">
                             <h2>3. Finally, install</h2>
                             <p>We suggest you try <strong>Kolumbao General (#kb-general)</strong>, the most popular Kolumbao channel.</p>
@@ -169,6 +164,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="js/copy.js"></script>
-    <script src="js/other.js"></script>
+    <script src="js/stats.js"></script>
 </body>
