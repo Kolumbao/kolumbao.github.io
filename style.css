@@ -13,6 +13,10 @@ html, body {
     /* font-size: 97%; */
 }
 
+.semibold {
+    font-weight: 700;
+}
+
 .bold {
     font-weight: 900;
 }
