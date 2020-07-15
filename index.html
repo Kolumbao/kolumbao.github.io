@@ -23,11 +23,13 @@
     <meta name="theme-color" content="#d9309e">
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-darkish shadow">
+   <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-darkish shadow-lg">
        <div class="container">
             <a class="navbar-brand" href="#">
                 <img id="logo" class="d-sm-none d-block" src="img/logo_transparent_png.png" height="30" alt="">
             </a>
+            
+            <span class="d-sm-none d-block">Kolumbao</span>
             
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -51,31 +53,42 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid bar bg-p">
-        <i class="fas fa-cog"></i> Kolumbao is currently under rapid development. Head to the <a href="https://discord.gg/9UBdZHu">support server</a> for the latest news.
+    <div class="container-fluid bar d-none d-md-block">
+        <i class="fas fa-cog"></i> Kolumbao is currently under rapid development. Head to the <a href="https://discord.gg/9UBdZHu" target="_blank">support server <i class="fas fa-sm fa-external-link-alt" aria-hidden="true"></i></a> for the latest news.
     </div>
     <div class="theme">
         <div class="container-fluid text-center p-5 text-white" id="lead">
             <h1 class="display-4 bold">Start talking</h1>
             <p class="pt-2">Kolumbao is a bot that allows users to communicate with each other without having to share any Discord servers.</p>
             <div class="row py-5">
-                <div class="col-12 col-lg-4">
-                    <h5>Messages</h5>
-                    <h2 class="semibold"><span id="message-count">0</span></h2>
+                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
+                    <h5>Users</h5>
+                    <h2 class="semibold"><span id="people-count">0</span></h2>
+                    <p class="small d-none d-md-block">that can access Kolumbao</p>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
+                    <h5>Messages</h5>
+                    <h2 class="semibold"><span id="message-count">0</span><span class="d-md-none"><sup>1</sup></span></h2>
+                    <p class="small d-none d-md-block">sent since the relaunch (<span class="total-count">0</span> total)</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
                     <h5>Servers</h5>
                     <h2 class="semibold"><span id="server-count">0</span></h2>
+                    <p class="small d-none d-md-block">using Kolumbao</p>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
                     <h5>Channels</h5>
                     <h2 class="semibold"><span id="channel-count">0</span></h2>
+                    <p class="small d-none d-md-block">installed by Kolumbao</p>
                 </div>
             </div>
-            <a href="#get-started" class="btn btn-primary">Get started</a>
+            <p class="small">
+                <span class="d-md-none"><sup>1</sup> Since the relaunch, <span class="total-count">0</span> total.</span>
+            </p>
+            <a href="#get-started" class="btn btn-primary btn-lg">Get started</a>
         </div> 
     </div>
-    
+     
     <section id="features">
         <div class="container pt-lg-3 pb-3">
             <div class="row d-flex py-3">

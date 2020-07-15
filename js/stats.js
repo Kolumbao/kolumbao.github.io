@@ -2,6 +2,7 @@ let elements = {
     "Messages": "#message-count",
     "Servers": "#server-count",
     "Channels": "#channel-count",
+    "People": "#people-count"
 }
 
 // https://stackoverflow.com/a/53798351
@@ -24,7 +25,6 @@ function update() {
     $.getJSON("https://discordapp.com/api/guilds/732994051766222888/widget.json?v=" + v.toString(), function (data) {
         for(var i = 0; i < data.channels.length; i++) {
             let el = data.channels[i].name.split(": ");
-            console.log(el);
             let target = elements[el[0]];
             if (target !== undefined) {
                 let int = parseInt(el[1]);
@@ -32,6 +32,12 @@ function update() {
                     int = toPrecision(int, 2, 'down').toLocaleString() + "+";
                 }
                 $(target).text(int.toString())
+            }
+            
+            if (el[0] == "Messages") {
+                let total = parseInt(el[1])+500039;
+                let int = toPrecision(total, 2, 'down').toLocaleString() + "+";
+                $(".total-count").text(int);
             }
         }
     });
