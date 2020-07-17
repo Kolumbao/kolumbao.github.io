@@ -8,17 +8,17 @@
 }
 
 html, body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF UI Text', sans-serif;
     scroll-behavior: smooth;
     /* font-size: 97%; */
 }
 
 .semibold {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .box {
