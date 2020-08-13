@@ -10,7 +10,6 @@
 html, body {
     font-family: 'Inter', serif;
     scroll-behavior: smooth;
-    /* font-size: 97%; */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-nav {
