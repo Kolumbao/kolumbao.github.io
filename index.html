@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/e9609ce59d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/highlight.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,7 +25,7 @@
     <meta name="theme-color" content="#d9309e">
 </head>
 <body>
-   <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-darkish shadow-lg">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-darkish">
        <div class="container">
             <a class="navbar-brand" href="#">
                 <img id="logo" class="d-sm-none d-block" src="img/logo_transparent_png.png" height="30" alt="">
@@ -40,6 +43,9 @@
                        <img id="logo" class="d-none d-sm-block" src="img/logo_transparent_png.png" height="30" alt="">
                     </a>
                     <li class="nav-item my-auto">
+                        <a href="#channels" class="nav-link">Channels</a>
+                    </li>
+                    <li class="nav-item my-auto">
                         <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item my-auto">
@@ -55,128 +61,298 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid bar d-none d-md-block">
-        <i class="fas fa-cog"></i> Kolumbao is currently under rapid development. Head to the <a href="https://discord.gg/9UBdZHu" target="_blank">support server <i class="fas fa-sm fa-external-link-alt" aria-hidden="true"></i></a> for the latest news.
-    </div>
-    <div class="theme">
-        <div class="container-fluid text-center px-5 pt-5 pb-4 text-white" id="lead">
+    <div>
+        <div class="container pt-5 pb-4" id="lead">
             <h1 class="display-4 bold">Start talking</h1>
             <p class="pt-2">Kolumbao is a bot that allows users to communicate with each other without having to share any Discord servers.</p>
             <div class="row py-5">
                 <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h5>Users</h5>
-                    <h2 class="semibold"><span id="people-count">0</span></h2>
-                    <p class="small d-none d-md-block">that can access Kolumbao</p>
+                    <h2 class="semibold">
+                        <span class="c red" id="people-count">...</span>
+                        users
+                    </h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h5>Messages</h5>
-                    <h2 class="semibold"><span id="message-count">0</span><span class="d-md-none"><sup>1</sup></span></h2>
-                    <p class="small d-none d-md-block">sent since the relaunch (<span class="total-count">0</span> total)</p>
+                    <h2 class="semibold">
+                        <span class="total-count c orange">...</span>
+                        messages
+                    </h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h5>Servers</h5>
-                    <h2 class="semibold"><span id="server-count">0</span></h2>
-                    <p class="small d-none d-md-block">using Kolumbao</p>
+                    <h2 class="semibold">
+                        <span class="c blue" id="server-count">...</span>
+                        servers
+                    </h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h5>Channels</h5>
-                    <h2 class="semibold"><span id="channel-count">0</span></h2>
-                    <p class="small d-none d-md-block">installed by Kolumbao</p>
+                    <h2 class="semibold">
+                        <span class="c green" id="channel-count">...</span>
+                        channels
+                    </h2>
                 </div>
             </div>
-            <p class="small">
-                <span class="d-md-none"><sup>1</sup> Since the relaunch, <span class="total-count">0</span> total.</span>
-            </p>
-            <a href="#get-started" class="btn btn-primary btn-lg mb-2">Get started</a>
-            <p class="small"><i class="fas fa-tag" aria-hidden="true"></i> Version 1.7.5</p>
+            <!-- <a href="#get-started" class="btn btn-primary btn-lg mb-2">Get started</a> -->
         </div> 
     </div>
-     
-    <section id="features">
-        <div class="container pt-lg-3 pb-3">
-            <div class="row d-flex py-3">
-                <div class="col-lg-6 desc left pb-3 pb-lg-0 order-0 order-lg-0">
-                    <h1 class="bold">Content fueled by the people</h1>
-                    <p>All of our channels are community suggested, and with the upcoming channel creation feature, you'll be able to make your own channels. Everything you want, when you want.</p>
+    
+    <section id="channels" class="bg blue text-white py-5 px-md-5 px-2"> 
+        <div class="container">
+            <h2 class="bold">
+                Channels
+            </h2>
+            <p>
+                Kolumbao is powered by its community, and its list of official 
+                channels are chosen and suggested by you, the people.
+            </p>
+        </div>
+        <div class="container-fluid">
+            <div class="row pt-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <h5 class="bold"><span class="c blue">#</span> General</h5>
+                        <p class="mt-3">
+                            Kolumbao General is the flagship of Kolumbao. It was the very first
+                            channel to be released on Kolumbao and is the most used channel to date.
+                        </p>
+                        <h6 class="text-muted">Rules</h6>
+                        <ul class="mt-3">
+                            <li>All content must be SFW (safe-for-work), and not disturb others.</li>
+                            <li>No suggestive or disturbing images, they have their place in #kb-nsfw.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-1">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <h5 class="bold"><span class="c blue">#</span> NSFW (Not Safe For Work)</h5>
+                        <p class="mt-3">
+                            Kolumbao NSFW is for all the naughty stuff. Any NSFW memes, posts, and inappropriate
+                            content that you wouldn't show your grandma or grandpa go here.
+                        </p>
+                        <h6 class="text-muted">Rules</h6>
+                        <ul class="mt-3">
+                            <li>Most content is allowed here, as long as it abides by Discord's ToS.</li>
+                            <li>The rules are lighter here, but you may still be punished for misbehaviour.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <h5 class="bold"><span class="c blue">#</span> Art</h5>
+                        <p class="mt-3">
+                            Kolumbao Art is the creativity and design section of Kolumbao. Any artistic content, including
+                            drawings, music, and paintings, should go here. Simply share your art or get some useful advice!
+                        </p>
+                        <h6 class="text-muted">Rules</h6>
+                        <ul class="mt-3">
+                            <li>All conversations in this channel should pertain to the arts.</li>
+                            <li>You can post your own art, share others' art or discuss art here, but do not pretend to be the creator.</li>
+                            <li>You may critique others' work, but do not be rude (such as "This looks awful, go get a life!").</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <h5 class="bold"><span class="c blue">#</span> Serious</h5>
+                        <p class="mt-3">
+                            The channel for serious discussion on Kolumbao. Debates and formal discussions are permitted here
+                            and can be used as a place to have serious conversation without jokes and informality.
+                        </p>
+                        <h6 class="text-muted">Rules</h6>
+                        <ul class="mt-3">
+                            <li>All conversations and debates should be civil, and not get out of hand.</li>
+                            <li>No memes or joking content unless related to the topic.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <small class="text-muted">French</small>
+                        <h5 class="bold"><span class="c blue">#</span> Général</h5>
+                        <p class="mt-3">
+                            Ce salon est dédié pour la langue française inter-serveur de Kolumbao. Parlez avec vos
+                            amis, trouvez de nouveaux amis et passez un bon temps sur Kolumbao Général !
+                        </p>
+                        <h6 class="text-muted">Règles</h6>
+                        <ul class="mt-3">
+                            <li>Tout contenu doit être approprié et ne pas déranger les autres.</li>
+                            <li>Pas d'images suggestives ou dérangeantes, elles ont leur place dans <strong>/ nsfw</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <small class="text-muted">Spanish</small>
+                        <h5 class="bold"><span class="c blue">#</span> Español</h5>
+                        <p class="mt-3">
+                            Este salón está dedicado a las partes en español de Kolumbao. ¡Habla con tus amigos,
+                            encuentra nuevos amigos y pásalo bien en el Kolumbao Español!
+                        </p>
+                        <h6 class="text-muted">Reglas</h6>
+                        <ul class="mt-3">
+                            <li>Todo el contenido debe ser APET (Apropiado Para El Trabajo) y no molestar a los demás.</li>
+                            <li>Pas d'images suggestives ou dérangeantes, elles ont leur place dans <strong>/ nsfw</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
+                    <div class="p-4 bg-white text-dark h-100">
+                        <h5 class="bold"><span class="c blue">#</span> Ad</h5>
+                        <p class="mt-3">
+                            An advertisement channel for every language.
+                        </p>
+                        <h6 class="text-muted">Rules</h6>
+                        <ul class="mt-3">
+                            <li>Don't spam advertisements.</li>
+                            <li>Give some sort of reason to join (try to avoid blocks of text).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="features" class="py-5 px-md-5 px-2">
+        <div class="container">
+            <h2 class="bold">
+                Features
+            </h2>
+            <p>
+                Kolumbao comes with a plethora of features to enhance your experience
+                in the community. Each of these features has been designed and tested
+                to ensure that your time on Kolumbao is fun and easy.
+            </p>
+            
+            <div class="row pt-4">
+                <div class="col-lg-4 col-md-5 col-12">
+                    <div class="sticky-top pt-3">
+                        <h5 class="bold">Content fueled by the people</h5>
+                        <p>
+                            All of our channels are community suggested, and with the
+                            upcoming channel creation feature, you'll be able to make
+                            your own channels. Everything you want, when you want.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-12 px-5">
                     <img src="img/display/results.png" alt="" class="preview">
                 </div>
             </div>
-
-           
-            <div class="row d-flex py-3">
-                <div class="col-lg-6 desc pb-3 pb-lg-0 order-0 order-lg-1">
-                    <h1 class="bold">Points &amp; leaderboard</h1>
-                    <p>By chatting you get points which rewards you for activity. Points can give you levels, and users with the most points get to the top of the leaderboard!</p>
-                    <p class="small">User discriminators hidden in example to protect identity</p>
+            <div class="row pt-4">
+                <div class="col-lg-4 col-md-5 col-12">
+                    <div class="sticky-top pt-3">
+                        <h5 class="bold">Points &amp; leaderboard</h5>
+                        <p>
+                            By chatting you get points which rewards you for activity.
+                            Points can give you levels, and users with the most points
+                            get to the top of the leaderboard!
+                        </p>
+                    </div>
                 </div>
-               <div class="col-lg-6 order-1 order-lg-0">
+                <div class="col-lg-8 col-md-7 col-12 px-5">
                     <img src="img/display/points.png" alt="" class="preview">
                 </div>
             </div>
-
-            <div class="row d-flex py-3">
-                <div class="col-lg-6 desc left pb-3 pb-lg-0 order-0 order-lg-0">
-                    <h1 class="bold">Growing community</h1>
-                    <p>The number of servers using Kolumbao is constantly increasing, and you can track its growth with commands.</p>
+            <div class="row pt-4">
+                <div class="col-lg-4 col-md-5 col-12">
+                    <div class="sticky-top pt-3">
+                        <h5 class="bold">Growing community</h5>
+                        <p>
+                            The number of servers using Kolumbao is constantly increasing,
+                            and you can track its growth with commands.
+                        </p>
+                    </div>
                 </div>
-               <div class="col-lg-6 order-1 order-lg-1">
-                    <img src="img/display/details.png" alt="" class="preview">
+                <div class="col-lg-8 col-md-7 col-12 px-5">
+                    <img src="img/display/points.png" alt="" class="preview">
                 </div>
             </div>
-            
-            <div class="row d-flex py-5" id="much-more">
-                <h1 class="bold mx-auto">And much more...</h1>
+            <div class="row pt-4">
+                <div class="col-lg-4 col-md-5 col-12">
+                    <div class="sticky-top pt-3">
+                        <h5 class="bold">Tons more features</h5>
+                        <p>
+                            There's so much to tell you, so here's a list of 
+                            features we pride ourselves on.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-12">
+                    <!-- More content -->
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-keyboard"></i> Typing indicator</h6>
+                            <p>When you start typing in a Kolumbao channel, everyone will see that someone is typing.</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/typing.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-door-open"></i> Welcome messages</h6>
+                            <p>When you talk in Kolumbao for the first time, you'll get a little help message guiding you to an explanation.</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/welcome.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-robot"></i> Auto-moderation</h6>
+                            <p>While we have a growing number of human moderators, we have automated moderators to stop spam.</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/automod.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-file"></i> File support</h6>
+                            <p>We support every file format and download, meaning you can send your memes and your documents over Kolumbao.</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/images.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="far fa-laugh-squint"></i> Emoji support</h6>
+                            <p>Kolumbao has complete support for image and animated emojis. Don't be held back!</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/emoji.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-bullhorn"></i> Announcements</h6>
+                            <p>Our helper "dogs" will send out announcements, both to provide support and to make people aware of events.</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/announcement.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                       <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-times"></i> Ping protection</h6>
+                            <p>People can't <code>@everyone</code> or <code>@here</code> your server from theirs, so you won't have any pesky or unauthorised pings!</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/everyone.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                    <div class="row d-flex py-3">
+                        <div class="col-md-6 col-12">
+                            <h6 class="semibold"><i class="fas fa-fingerprint"></i> User management</h6>
+                            <p>Each user gets a profile in the Kolumbao network. Our moderation team can mute users or entire servers if deemed necessary to protect you.</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="img/display/profile.png" alt="" class="small preview">
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <!-- More content -->
-            <div class="row d-flex py-1">
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-keyboard"></i> Typing indicator</h6>
-                    <p>When you start typing in a Kolumbao channel, everyone will see that someone is typing.</p>
-                    <img src="img/display/typing.png" alt="" class="small preview">
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-door-open"></i> Welcome messages</h6>
-                    <p>When you talk in Kolumbao for the first time, you'll get a little help message guiding you to an explanation.</p>
-                    <img src="img/display/welcome.png" alt="" class="small preview">
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-robot"></i> Auto-moderation</h6>
-                    <p>While we have a growing number of human moderators, we have automated moderators to stop spam.</p>
-                    <img src="img/display/automod.png" alt="" class="small preview">
-                </div>
 
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-file"></i> File support</h6>
-                    <p>We support every file format and download, meaning you can send your memes and your documents over Kolumbao.</p>
-                    <img src="img/display/images.png" alt="" class="small preview">
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="far fa-laugh-squint"></i> Emoji support</h6>
-                    <p>Kolumbao has complete support for image and animated emojis. Don't be held back!</p>
-                    <img src="img/display/emoji.png" alt="" class="small preview">
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-bullhorn"></i> Announcements</h6>
-                    <p>Our helper "dogs" will send out announcements, both to provide support and to make people aware of events.</p>
-                    <img src="img/display/announcement.png" alt="" class="small preview">
-                </div>
-
-               <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-times"></i> Ping protection</h6>
-                    <p>People can't <code>@everyone</code> or <code>@here</code> your server from theirs, so you won't have any pesky or unauthorised pings!</p>
-                    <img src="img/display/everyone.png" alt="" class="small preview">
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 py-3">
-                    <h6 class="semibold"><i class="fas fa-fingerprint"></i> User management</h6>
-                    <p>Each user gets a profile in the Kolumbao network. Our moderation team can mute users or entire servers if deemed necessary to protect you.</p>
-                    <img src="img/display/profile.png" alt="" class="small preview">
-                </div>
-                
-                
-            </div>
         </div>
     </section>
     

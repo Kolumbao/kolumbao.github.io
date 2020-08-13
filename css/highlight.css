@@ -1,0 +1,42 @@
+.highlight {
+  --color: #F3969A;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, var(--color) 50%);
+  display: inline;
+}
+
+.highlight.h1,
+.highlight.h2,
+.highlight.h3,
+.highlight.h4,
+.highlight.h5,
+.highlight.h6 {
+  display: inline-block !important;
+}
+
+.highlight.red {
+  --color: lightcoral;
+}
+
+.highlight.orange {
+  --color: #f8b88b;
+}
+
+.highlight.yellow {
+  --color: #faf884 ;
+}
+
+.highlight.blue {
+  --color: #b2cefe;
+}
+
+.highlight.accent-0 {
+  --color: var(--accent-0);
+}
+
+.highlight.accent-1 {
+  --color: var(--accent-1);
+}
+
+.highlight.accent-2 {
+  --color: var(--accent-2);
+}

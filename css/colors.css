@@ -1,0 +1,25 @@
+.bg {
+    --color: white;
+    background-color: var(--color);
+}
+
+.c {
+    --color: black;
+    color: var(--color);
+}
+
+.red {
+    --color: #ff1a1a;
+}
+
+.blue {
+    --color: #1a8dff;
+}
+
+.orange {
+    --color: #ff7f00;
+}
+
+.green {
+    --color: #89e200;
+}

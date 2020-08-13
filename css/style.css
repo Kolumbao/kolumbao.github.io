@@ -8,9 +8,23 @@
 }
 
 html, body {
-    font-family: 'SF UI Text Regular', sans-serif;
+    font-family: 'Inter', serif;
     scroll-behavior: smooth;
     /* font-size: 97%; */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-nav {
+    font-family: 'Inter', sans-serif;
+}
+
+pre, code, .code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.code {
+    background-color: lightgrey;
+    padding: 1rem;
+    border: 1px solid;
 }
 
 .semibold {
@@ -39,7 +53,7 @@ html, body {
 }
 
 .theme {
-    background-color: var(--accent-1);
+    background-color: #c0aee0;
 }
 
 .container.bar, .container-fluid.bar {

@@ -29,14 +29,15 @@ function update() {
             if (target !== undefined) {
                 let int = parseInt(el[1]);
                 if (int >= 1000) {
-                    int = toPrecision(int, 2, 'down').toLocaleString() + "+";
+                    int = toPrecision(int, 3, 'down').toLocaleString() + "+";
                 }
-                $(target).text(int.toString())
+                $(target).text(int.toLocaleString())
             }
             
             if (el[0] == "Messages") {
+                // Add pre-update count
                 let total = parseInt(el[1])+500039;
-                let int = toPrecision(total, 2, 'down').toLocaleString() + "+";
+                let int = toPrecision(total, 3, 'down').toLocaleString() + "+";
                 $(".total-count").text(int);
             }
         }
