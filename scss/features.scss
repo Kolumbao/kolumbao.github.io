@@ -50,18 +50,18 @@
         }
 
         &--accent-0 {
-            background-color: $accent-0;
-            i { color: darken($color: $accent-0, $amount: 15%); }
+            background-color: lighten($color: $accent-0, $amount: 15%);;
+            i { color: $accent-0; }
         }
 
         &--accent-1 {
-            background-color: $accent-1;
-            i { color: darken($color: $accent-1, $amount: 20%); }
+            background-color: lighten($color: $accent-1, $amount: 15%);;
+            i { color: $accent-1; }
         }
 
         &--accent-2 {
-            background-color: $accent-2;
-            i { color: darken($color: $accent-2, $amount: 15%); }
+            background-color: lighten($color: $accent-2, $amount: 15%);;
+            i { color: $accent-2; }
         }
     }
 

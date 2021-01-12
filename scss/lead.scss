@@ -1,6 +1,12 @@
 @import 'breakpoints';
 @import 'colors';
 
+.navbar {
+    #toggle i {
+        font-size: 1.6em;
+    }
+}
+
 #lead {
     text-align: center;
     padding-top: 5em;

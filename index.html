@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/text-styles.css">
     <link rel="stylesheet" href="css/padding.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/started.css">
     <link rel="stylesheet" href="css/lead.css">
+    <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/features.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Inter:wght@400;500;600;700;900&display=swap"
@@ -23,21 +25,29 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom cont cont--nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="d-none d-sm-block" src="/img/logo/blackname.svg" alt="" height="24">
-                <img class="d-block d-sm-none" src="/img/logo/icon.svg" alt="" height="24">
+                <img class="d-none d-sm-block" src="/img/logo/blackname.svg" alt="" height="24"
+                    onerror="this.onerror=null; this.src='/img/logo/blackname.png'">
+                <img class="d-block d-sm-none" src="/img/logo/icon.svg" alt="" width="24"
+                    onerror="this.onerror=null; this.src='/img/logo/logo.png'">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation" id="toggle">
+                <i class="ri-menu-line"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-lg-flex justify-content-end">
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a href="#started" class="nav-link">Getting started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">Top channels</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#stats" class="nav-link">Statistics</a>
                     </li> -->
                 </ul>
             </div>
@@ -45,14 +55,20 @@
     </nav>
     <div class="row w-100 cont m-auto" id="lead">
         <div class="col-lg-7 col-12 d-flex flex-column m-auto">
-            <h1 id="lead-title">Welcome to Kolumbao!<!-- <span id="peregrine-banner">Peregrine Edition</span>--></h1>
+            <h1 id="lead-title">Welcome to Kolumbao!
+                <!-- <span id="peregrine-banner">Peregrine Edition</span>-->
+            </h1>
             <p id="lead-text">
                 Get started with Kolumbao today, a bot that connects Discord
                 servers with customizable shared channels.
             </p>
             <div>
-                <button type="button" class="btn btn-primary">Getting started</button>
-                <button type="button" class="btn btn-outline-secondary">More info</button>
+                <a name="getting-started" id="getting-started" class="btn btn-primary" href="#" role="button">
+                    Getting started
+                </a>
+                <a name="more-info" id="more-info" class="btn btn-outline-secondary" href="#features" role="button">
+                    More info
+                </a>
             </div>
         </div>
         <div class="col-lg-5 col-12 d-flex" id="lead-image">
@@ -79,7 +95,7 @@
                 </h4>
                 <p class="content">
                     All of our channels are community suggested or created, and
-                    you can create your own! 
+                    you can create your own!
                 </p>
             </div>
 
@@ -102,7 +118,7 @@
                     <i class="ri-customer-service-2-fill"></i>
                 </div>
                 <h4 class="title">
-                    Reactive Staff
+                    Reactive staff
                 </h4>
                 <p class="content">
                     Our staff are active and on around the clock. With both
@@ -110,17 +126,140 @@
                     content respect our rules and Discord&trade;'s rules.
                 </p>
             </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-1">
+                    <i class="ri-robot-fill"></i>
+                </div>
+                <h4 class="title">
+                    Automated moderation
+                </h4>
+                <p class="content">
+                    We have a range of protections to prevent users from
+                    spamming or raiding the Kolumbao network, and filters to
+                    stop any unwarranted content.
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-2">
+                    <i class="ri-markup-line"></i>
+                </div>
+                <h4 class="title">
+                    Native experience
+                </h4>
+                <p class="content">
+                    Unlike other interserver platforms, Kolumbao makes messages
+                    look clean and natural, no clunky embeds or bot messages.
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-0">
+                    <i class="ri-compasses-2-line"></i>
+                </div>
+                <h4 class="title">
+                    Easy to setup
+                </h4>
+                <p class="content">
+                    We keep it simple. Creating your own shared channels is
+                    easy, and installing new shared channels is even easier!
+                </p>
+            </div>
         </div>
     </div>
+
     
+    <div class="w-100 cont" id="started">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2>Getting started</h2>
+                <p>Getting started is easy! Just follow these three easy steps:</p>
+                <ol>
+                    <li>
+                        Invite the bot
+                        <a
+                            href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">with
+                            this link.
+                        </a>
+                    </li>
+                    <li>
+                        We recommend you install the flagship channel, <strong>kb-general</strong>.
+                        Do so with <em>kb!join kb-general</em>.
+                    </li>
+                    <li>
+                        Start talking! Your messages will begin to show up on other servers, try say
+                        hello!
+                    </li>
+                </ol>
+            </div>
+            <div class="col-12 col-md-6 d-none d-md-flex justify-content-end">
+                <img src="/img/logo/icon.svg" alt="" height="100%">
+            </div>
+        </div>
+    </div>
+
     <div class="w-100 cont" id="top">
-        <h2 id="top-title">Top shared channels</h2>
-        <p id="top-description">These are the most popular channels (by message count) across our bot.</p>
-        <div class="row" id="top-channels">
+        <h2 class="top-title">Top shared channels</h2>
+        <p class="top-description">
+            These are the most popular channels (by message count) across our bot.
+        </p>
+        <div class="row pb-4" id="top-channels">
+            <p>Loading...</p>
+        </div>
+        <h3 class="top-title">Hottest channels <i class="ri-fire-fill"></i></h3>
+        <p class="top-description">
+            These channels have the most new messages in the last week.
+        </p>
+        <div class="row" id="hot-channels">
             <p>Loading...</p>
         </div>
     </div>
-    
+
+    <!-- <div class="w-100 cont" id="branding">
+        <h2>Branding</h2>
+        <p>
+            Kolumbao is meant to be simple and recognizable, that's why we have
+            a simple logo and eye-catching color scheme.
+        </p>
+        <div class="row">
+            <div class="col-md-6 col-12 pb-3 pb-md-0">
+                <h3>Colors</h3>
+                <p>
+                    Kolumbao has a few variants of its logo and a tricolor color scheme,
+                    as well as 2 gradients used on the logos.
+                </p>
+                <img src="/img/logo/coloursguide.svg" alt="" width="100%">
+            </div>
+            <div class="col-md-6 col-12 pb-3 pb-md-0">
+                <h3>Logos</h3>
+                <p>
+                    There are 3 variants of the "worded" logo, one of which is
+                    at the top of this page.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                    <div style='width: 50%;'>
+                        <img src="/img/logo/blackname.svg" alt="" width="100%">
+                        <img src="/img/logo/fullblack.svg" alt="" width="100%">
+                        <img src="/img/logo/fullgrey.svg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 pb-3 pb-md-0">
+                <h3>Icon</h3>
+                <p>
+                    Kolumbao has 2 icons too, each usable in different contexts.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="d-flex justify-content-between" style='width: 50%;'>
+                        <img src="/img/logo/icon.svg" alt="" width="30%">
+                        <img src="/img/logo/invertedicon.svg" alt="" width="60%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
 
     <div class="w-100 cont cont--small border-top" id="footer">
         <p>Illustration by <a href="undefined">Natasha Remarchuk</a> from <a href="https://icons8.com/">Icons8</a></p>
