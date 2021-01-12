@@ -1,0 +1,49 @@
+@import 'colors';
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 0 20px 10px 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $accent-1;
+    border-color: $accent-1;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $accent-0;
+    border-color: $accent-0;
+}
+
+.btn-outline-secondary {
+    color: #000000;
+    border-color: #aeb3b8;
+}
+
+.btn-outline-secondary:hover {
+    color: #000000;
+    border-color: #5a5e61;
+    background-color: transparent;
+}
+
+
+#top {
+    background-color: lighten($color: $accent-0, $amount: 10%);
+
+    #top-title {
+        color: white;
+    }
+
+    #top-description {
+        color: lighten($color: #646369, $amount: 50%)
+    }
+}

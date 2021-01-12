@@ -1,0 +1,36 @@
+.title, h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  /* font-size: 200%; */
+  letter-spacing: -0.035em;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+p, small {
+  color: #646369;
+  font-family: "Harmattan", sans-serif;
+  font-size: 1.3em;
+}
+
+small {
+  font-size: small;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+}
+
+#nav {
+  font-family: "Inter", sans-serif;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=text-styles.css.map */

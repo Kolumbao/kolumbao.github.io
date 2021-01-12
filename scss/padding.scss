@@ -1,0 +1,50 @@
+@import 'breakpoints';
+
+
+.cont {
+    padding: 3em 1em;
+
+    &--small {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    &--nav {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+@media (min-width: $breakpoint-sm) {
+    .cont {
+        padding: 3em 2em;
+
+        &--small {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .cont {
+        padding: 3em 5em;
+
+        &--small {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .cont {
+        padding: 4em 15vw;
+
+        &--small {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+        
+    }
+}

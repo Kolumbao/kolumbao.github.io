@@ -1,0 +1,36 @@
+@import 'breakpoints';
+@import 'colors';
+
+#lead {
+    text-align: center;
+    padding-top: 5em;
+
+    background-color: lighten($color: $accent-1, $amount: 20%);
+    
+    @media (min-width: $breakpoint-md) {
+        text-align: left;
+        padding-top: none;
+    }
+
+
+    #lead-title {
+        font-size: 3em;
+        // color: white;
+    }
+
+
+    #lead-text {
+        font-size: 1.5em;
+        // color: lighten($color: #646369, $amount: 50%);
+    }
+
+    #lead-image {
+        justify-content: center;
+        
+        @media (min-width: $breakpoint-lg) {
+            justify-content: flex-end;
+            text-align: left;
+        }
+    }
+
+}

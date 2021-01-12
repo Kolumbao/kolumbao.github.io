@@ -1,0 +1,70 @@
+.accent-0 {
+  color: #947bd3;
+}
+
+.accent-1 {
+  color: #f26caf;
+}
+
+.accent-2 {
+  color: #5e4ae3;
+}
+
+.bg-accent-0 {
+  background-color: #947bd3;
+}
+
+.bg-accent-1 {
+  background-color: #f26caf;
+}
+
+.bg-accent-2 {
+  background-color: #5e4ae3;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0 20px 10px 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f26caf;
+  border-color: #f26caf;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #947bd3;
+  border-color: #947bd3;
+}
+
+.btn-outline-secondary {
+  color: #000000;
+  border-color: #aeb3b8;
+}
+
+.btn-outline-secondary:hover {
+  color: #000000;
+  border-color: #5a5e61;
+  background-color: transparent;
+}
+
+#top {
+  background-color: #b3a1e0;
+}
+#top #top-title {
+  color: white;
+}
+#top #top-description {
+  color: #e5e5e6;
+}
+
+/*# sourceMappingURL=general.css.map */
