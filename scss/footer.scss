@@ -1,6 +1,15 @@
 @import 'colors';
 
 
+#footer {
+    p {
+        margin-bottom: 0;
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
 // #top {
 //     background-color: lighten($color: $accent-0, $amount: 10%);
 

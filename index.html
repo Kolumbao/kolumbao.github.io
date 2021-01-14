@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/started.css">
     <link rel="stylesheet" href="css/lead.css">
-    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/features.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Inter:wght@400;500;600;700;900&display=swap"
@@ -25,10 +25,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom cont cont--nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="d-none d-sm-block" src="/img/logo/blackname.svg" alt="" height="24"
-                    onerror="this.onerror=null; this.src='/img/logo/blackname.png'">
-                <img class="d-block d-sm-none" src="/img/logo/icon.svg" alt="" width="24"
-                    onerror="this.onerror=null; this.src='/img/logo/logo.png'">
+                <img class="d-none d-sm-block" src="/img/logo/blackname.svg" alt="" height="24">
+                <img class="d-block d-sm-none" src="/img/logo/icon-thin.svg" alt="" width="24">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -62,16 +60,21 @@
                 Get started with Kolumbao today, a bot that connects Discord
                 servers with customizable shared channels.
             </p>
+            <p>Over <strong><span id="messages-count">0</span></strong> messages received and <strong><span id="sentmessages-count">0</span></strong> delivered.</p>
             <div>
-                <a name="getting-started" id="getting-started" class="btn btn-primary" href="#" role="button">
+                <a name="getting-started" id="getting-started" class="btn" href="#started" role="button">
                     Getting started
                 </a>
                 <a name="more-info" id="more-info" class="btn btn-outline-secondary" href="#features" role="button">
                     More info
                 </a>
+                <a name="invite-button" id="invite-button" class="btn btn-secondary" href="#" role="button" target="_blank">
+                    <span id="invite-button-text">Loading invite</span> <i class="ri-discord-fill"></i>
+                </a>
             </div>
         </div>
-        <div class="col-lg-5 col-12 d-flex" id="lead-image">
+        <div class="col-lg-5 col-12 d-flex" id="lead-media">
+            <!-- <iframe src="https://discord.com/widget?id=457205628754984960&theme=dark" width="300px" height="300px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
             <img src="/marginalia-765.png" alt="" width="300px">
         </div>
     </div>
@@ -214,6 +217,11 @@
         <div class="row" id="hot-channels">
             <p>Loading...</p>
         </div>
+
+        <small>
+            *Do not try to refresh to see updates. These are only updated every
+            60 seconds and you may be ratelimited if you spam.
+        </small>
     </div>
 
     <!-- <div class="w-100 cont" id="branding">
@@ -261,8 +269,9 @@
     </div> -->
 
 
-    <div class="w-100 cont cont--small border-top" id="footer">
-        <p>Illustration by <a href="undefined">Natasha Remarchuk</a> from <a href="https://icons8.com/">Icons8</a></p>
+    <div class="w-100 cont cont--small border-top d-flex justify-content-between" id="footer">
+        <p>Made with <i class="ri-heart-fill" style="color: #E74C3C;"></i></p>
+        <small>Lead illustration by <a href="undefined">Natasha Remarchuk</a> from <a href="https://icons8.com/">Icons8</a></small>
     </div>
 
     <!-- Scripts -->
@@ -271,6 +280,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/top.js"></script>
+    <script src="js/invite.js"></script>
 </body>
 
 </html>

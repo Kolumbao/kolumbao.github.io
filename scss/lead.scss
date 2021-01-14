@@ -30,12 +30,41 @@
         // color: lighten($color: #646369, $amount: 50%);
     }
 
-    #lead-image {
+    #lead-media {
         justify-content: center;
         
         @media (min-width: $breakpoint-lg) {
             justify-content: flex-end;
             text-align: left;
+        }
+    }
+
+    #getting-started {
+        color: #fff;
+        background-color: $accent-1;
+        border-color: $accent-1;
+    
+        &:hover {
+            color: #fff;
+            background-color: darken($color: $accent-1, $amount: 10%);
+            border-color: darken($color: $accent-1, $amount: 10%);
+        }
+    }
+
+    #invite-button {
+        color: #fff;
+        background-color: $accent-0;
+        border-color: $accent-0;
+        
+        &:hover {
+            color: #fff;
+            background-color: darken($color: $accent-0, $amount: 10%);
+            border-color: darken($color: $accent-0, $amount: 10%);
+        }
+
+        i {
+            font-weight: 100;
+            vertical-align: middle;
         }
     }
 

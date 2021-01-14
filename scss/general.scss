@@ -21,13 +21,14 @@ html, body {
     color: #fff;
     background-color: $accent-1;
     border-color: $accent-1;
+
+    &:hover {
+        color: #fff;
+        background-color: darken($color: $accent-1, $amount: 10%);
+        border-color: darken($color: $accent-1, $amount: 10%);
+    }
 }
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: $accent-0;
-    border-color: $accent-0;
-}
 
 .btn-outline-secondary {
     color: #000000;

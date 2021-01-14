@@ -66,7 +66,7 @@ function update() {
                 $("#top-channels").append(doc);
             }
 
-            if (hot_channels.includes(el.id)) {
+            else if (hot_channels.includes(el.id)) {
                 let [name, messages, description] = split(el.name, /;/g, 2);
                 let doc = $($.parseHTML(hotdef));
                 doc.find(".hot-card-title").text(name);
@@ -74,10 +74,23 @@ function update() {
                 doc.find(".hot-card-description").text(description);
                 $("#hot-channels").append(doc);
             }
+            
+            // Shared messages stats
+            else if (el.id === "798209963142283307") {
+                // 500039 for pre-Kolumbao (WalkieTalkie) count
+                $("#messages-count").text((parseInt(el.name)+500039).toLocaleString(undefined, { maximumSignificantDigits: 3 }))
+            }
+
+            // Delivered
+            else if (el.id === "799249338298663004") {
+                $("#sentmessages-count").text(parseInt(el.name).toLocaleString(undefined, { maximumSignificantDigits: 3 }))
+            }
         }
+    }).fail(function (e) {
+        $("#top-channels, #hot-channels").html("<p>Error loading stats. Try again later</p>");
     });
 }
 
 $(document).ready(update);
 
-setInterval(update, 60000);
+// setInterval(update, 60000);
