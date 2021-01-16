@@ -1,602 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolumbao</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e9609ce59d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/font.css?v=202018131458">
-    <link rel="stylesheet" href="css/style.css?v=202018131458">
-    <link rel="stylesheet" href="css/highlight.css?v=202018131458">
-    <link rel="stylesheet" href="css/colors.css?v=202018131458">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d9309e">
-    <meta name="msapplication-TileColor" content="#d9309e">
-    <meta name="theme-color" content="#d9309e">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/text-styles.css">
+    <link rel="stylesheet" href="css/padding.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/started.css">
+    <link rel="stylesheet" href="css/lead.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Inter:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
-   <nav class="navbar navbar-expand-sm navbar-dark bg-darkish">
-       <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom cont cont--nav">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img id="logo" class="d-sm-none d-block" src="img/logo_transparent_png.png" height="30" alt="">
+                <img class="d-none d-sm-block" src="/img/logo/blackname.svg" alt="" height="24">
+                <img class="d-block d-sm-none" src="/img/logo/icon-thin.svg" alt="" width="24">
             </a>
-            
-            <span class="d-sm-none d-block">Kolumbao</span>
-            
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="toggle">
+                <i class="ri-menu-line"></i>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <a class="navbar-brand" href="#">
-                       <img id="logo" class="d-none d-sm-block" src="img/logo_transparent_png.png" height="30" alt="">
-                    </a>
-                    <li class="nav-item my-auto">
-                        <a href="#channels" class="nav-link">Channels</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-lg-flex justify-content-end">
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
                     </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link" href="#features">Features</a>
+                    <li class="nav-item">
+                        <a href="#started" class="nav-link">Getting started</a>
                     </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link" href="#get-started">Installation</a>
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">Top channels</a>
                     </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link" href="https://discord.gg/9UBdZHu"><i class="fab fa-discord fa-lg d-none d-sm-inline d-lg-none"></i> <span class="d-inline d-sm-none d-lg-inline">Support</span></a>
-                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#stats" class="nav-link">Statistics</a>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
-    <div>
-        <div class="container pt-5 pb-4" id="lead">
-            <h1 class="display-4 bold">Start talking</h1>
-            <p class="pt-2">Kolumbao is a bot that allows users to communicate with each other without having to share any Discord servers.</p>
-            <div class="row py-5">
-                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h2 class="semibold">
-                        <span class="c red" id="people-count">...</span>
-                        users
-                    </h2>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h2 class="semibold">
-                        <span class="total-count c orange">...</span>
-                        messages
-                    </h2>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h2 class="semibold">
-                        <span class="c blue" id="server-count">...</span>
-                        servers
-                    </h2>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 pb-2 pb-lg-0">
-                    <h2 class="semibold">
-                        <span class="c green" id="channel-count">...</span>
-                        channels
-                    </h2>
-                </div>
-            </div>
-
-            <!-- <a href="#get-started" class="btn btn-primary btn-lg mb-2">Get started</a> -->
-        </div> 
-    </div>
-    
-    <section id="channels" class="bg blue text-white py-5 px-md-5 px-2"> 
-        <div class="container">
-            <h2 class="bold">
-                Official Channels
-            </h2>
-            <p>
-                Kolumbao is powered by its community, and its list of official 
-                channels are chosen and suggested by you, the people; and with
-                user-created channels, you can make a channel for anything and
-                everything! See the top channels after installing Kolumbao
-                with <code class="text-white">kb!top</code>.
+    <div class="row w-100 cont m-auto" id="lead">
+        <div class="col-lg-7 col-12 d-flex flex-column m-auto">
+            <h1 id="lead-title">Welcome to Kolumbao!
+                <!-- <span id="peregrine-banner">Peregrine Edition</span>-->
+            </h1>
+            <p id="lead-text">
+                Get started with Kolumbao today, a bot that connects Discord
+                servers with customizable shared channels.
             </p>
-            <p>
-                
-            </p>
-        </div>
-        <div class="container-fluid">
-            <div class="row pt-4">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold"><span class="c blue">#</span> General</h5>
-                        <p class="mt-3">
-                            Kolumbao General is the flagship of Kolumbao. It was the very first
-                            channel to be released on Kolumbao and is the most used channel to date.
-                        </p>
-                        <h6 class="text-muted">Rules</h6>
-                        <ul class="mt-3">
-                            <li>All content must be SFW (safe-for-work), and not disturb others.</li>
-                            <li>No suggestive or disturbing images, they have their place in #kb-nsfw.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold"><span class="c blue">#</span> NSFW (Not Safe For Work)</h5>
-                        <p class="mt-3">
-                            Kolumbao NSFW is for all the naughty stuff. Any NSFW memes, posts, and inappropriate
-                            content that you wouldn't show your grandma or grandpa go here.
-                        </p>
-                        <h6 class="text-muted">Rules</h6>
-                        <ul class="mt-3">
-                            <li>Most content is allowed here, as long as it abides by Discord's ToS.</li>
-                            <li>The rules are lighter here, but you may still be punished for misbehaviour.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold"><span class="c blue">#</span> Art</h5>
-                        <p class="mt-3">
-                            Kolumbao Art is the creativity and design section of Kolumbao. Any artistic content, including
-                            drawings, music, and paintings, should go here. Simply share your art or get some useful advice!
-                        </p>
-                        <h6 class="text-muted">Rules</h6>
-                        <ul class="mt-3">
-                            <li>All conversations in this channel should pertain to the arts.</li>
-                            <li>You can post your own art, share others' art or discuss art here, but do not pretend to be the creator.</li>
-                            <li>You may critique others' work, but do not be rude (such as "This looks awful, go get a life!").</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold"><span class="c blue">#</span> Serious</h5>
-                        <p class="mt-3">
-                            The channel for serious discussion on Kolumbao. Debates and formal discussions are permitted here
-                            and can be used as a place to have serious conversation without jokes and informality.
-                        </p>
-                        <h6 class="text-muted">Rules</h6>
-                        <ul class="mt-3">
-                            <li>All conversations and debates should be civil, and not get out of hand.</li>
-                            <li>No memes or joking content unless related to the topic.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <small class="text-muted">French</small>
-                        <h5 class="bold"><span class="c blue">#</span> Général</h5>
-                        <p class="mt-3">
-                            Ce salon est dédié pour la langue française inter-serveur de Kolumbao. Parlez avec vos
-                            amis, trouvez de nouveaux amis et passez un bon temps sur Kolumbao Général !
-                        </p>
-                        <h6 class="text-muted">Règles</h6>
-                        <ul class="mt-3">
-                            <li>Tout contenu doit être approprié et ne pas déranger les autres.</li>
-                            <li>Pas d'images suggestives ou dérangeantes, elles ont leur place dans <strong>/ nsfw</strong>.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold"><span class="c blue">#</span> Ad</h5>
-                        <p class="mt-3">
-                            An advertisement channel for every language.
-                        </p>
-                        <h6 class="text-muted">Rules</h6>
-                        <ul class="mt-3">
-                            <li>Don't spam advertisements.</li>
-                            <li>Give some sort of reason to join (try to avoid blocks of text).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container pt-5">
-            <h2>Custom Channels</h2>
-            <p>
-                Custom channels are finally here (2020.08.16), and let users
-                create their own channels! Create your own with <code class="text-white">kb!create</code>.
-                <small>You must be level 8 on Kolumbao to access this feature</small>
-            </p>
-            <h4><code class="text-white">kb!create</code></h4>
-            <p>
-                This command will guide you through a channel creation process, in order 
-                to get details about how you want the channel to look.
-            </p>
-            <h4><code class="text-white">kb!edit &lt;id&gt; &lt;field&gt; &lt;value&gt;</code></h4>
-            <p>
-                This command is used to edit details about your channel. For example,
-                <code class="text-white">&lt;field&gt;</code> could be <code class="text-white">rules</code>,
-                and <code class="text-white">&lt;value&gt;</code> could be your new rules.
-            </p>
-            <p>
-                You can get more specific help by simply running <code class="text-white">kb!edit</code>
-                with no arguments.
-            </p>
-        </div>
-    </section>
-    
-    <section id="features" class="py-5 px-md-5 px-2">
-        <div class="container">
-            <h2 class="bold">
-                Features
-            </h2>
-            <p>
-                Kolumbao comes with a plethora of features to enhance your experience
-                in the community. Each of these features has been designed and tested
-                to ensure that your time on Kolumbao is fun and easy.
-            </p>
-            
-            <div class="row pt-4">
-                <div class="col-lg-4 col-md-5 col-12">
-                    <div class="sticky-top pt-3">
-                        <h5 class="bold">Content fueled by the people</h5>
-                        <p>
-                            All of our channels are community suggested, and with the
-                            upcoming channel creation feature, you'll be able to make
-                            your own channels. Everything you want, when you want.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 col-12 px-5">
-                    <img src="img/display/results.png" alt="" class="preview">
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-lg-4 col-md-5 col-12">
-                    <div class="sticky-top pt-3">
-                        <h5 class="bold">Points &amp; leaderboard</h5>
-                        <p>
-                            By chatting you get points which rewards you for activity.
-                            Points can give you levels, and users with the most points
-                            get to the top of the leaderboard!
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 col-12 px-5">
-                    <img src="img/display/points.png" alt="" class="preview">
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-lg-4 col-md-5 col-12">
-                    <div class="sticky-top pt-3">
-                        <h5 class="bold">Growing community</h5>
-                        <p>
-                            The number of servers using Kolumbao is constantly increasing,
-                            and you can track its growth with commands.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 col-12 px-5">
-                    <img src="img/display/details.png" alt="" class="preview">
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-lg-4 col-md-5 col-12">
-                    <div class="sticky-top pt-3">
-                        <h5 class="bold">Tons more features</h5>
-                        <p>
-                            There's so much to tell you, so here's a list of 
-                            features we pride ourselves on.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 col-12">
-                    <!-- More content -->
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-keyboard"></i> Typing indicator</h6>
-                            <p>When you start typing in a Kolumbao channel, everyone will see that someone is typing.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/typing.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-door-open"></i> Welcome messages</h6>
-                            <p>When you talk in Kolumbao for the first time, you'll get a little help message guiding you to an explanation.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/welcome.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-robot"></i> Auto-moderation</h6>
-                            <p>While we have a growing number of human moderators, we have automated moderators to stop spam.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/automod.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-file"></i> File support</h6>
-                            <p>We support every file format and download, meaning you can send your memes and your documents over Kolumbao.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/images.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="far fa-laugh-squint"></i> Emoji support</h6>
-                            <p>Kolumbao has complete support for image and animated emojis. Don't be held back!</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/emoji.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-bullhorn"></i> Announcements</h6>
-                            <p>Our helper "dogs" will send out announcements, both to provide support and to make people aware of events.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/announcement.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                       <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-times"></i> Ping protection</h6>
-                            <p>People can't <code>@everyone</code> or <code>@here</code> your server from theirs, so you won't have any pesky or unauthorised pings!</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/everyone.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                    <div class="row d-flex py-3">
-                        <div class="col-md-6 col-12">
-                            <h6 class="semibold"><i class="fas fa-fingerprint"></i> User management</h6>
-                            <p>Each user gets a profile in the Kolumbao network. Our moderation team can mute users or entire servers if deemed necessary to protect you.</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/display/profile.png" alt="" class="small preview">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="get-started" class="bg orange text-light py-5 px-md-5 px-2">
-        <div class="container">
-            <h2 class="bold">
-                Getting Started
-            </h2>
-            <p>
-                Getting started with Kolumbao is easy! Just follow these steps,
-                and join the <a class="text-secondary" href="https://discord.gg/9UBdZHu">support server</a>
-                if needed.
-            </p>
-            
-            <div class="row pt-4">
-                <div class="col-lg-4 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold">1. Invite the bot</h5>
-                        <p class="mt-3">
-                           Simply <a href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">invite the bot</a>
-                           with the requested permissions (not providing all may limit future
-                           functionality).
-                        </p>
-                        <img src="img/display/invite.png" class="w-100">
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold">2. Check out <code>kb!setup</code></h5>
-                        <p class="mt-3">
-                            Take a look at <code>kb!setup</code> – a simple command that
-                            tells you everything you need to know.
-                        </p>
-                        <img src="img/display/setup.png" class="w-100">
-                    </div>
-                </div>
-                <div class="col-12 p-1">
-                    <div class="p-4 bg-white text-dark h-100">
-                        <h5 class="bold">3. Finally, install</h5>
-                        <p class="mt-3">
-                            Kolumbao has a growing number of channels, and you
-                            can see all the official channels
-                            <a href="#channels">above</a>.
-                            The channel installation functionality is due to be 
-                            remade, for a much cleaner experience and easier
-                            installation process. This update will come alongside
-                            the custom channels feature.
-                        </p>
-                        <img src="img/display/command.png" class="w-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="get-started" class="py-5 px-md-5 px-2">
-        <div class="container">
-            <h2 class="bold">
-                Branding
-            </h2>
-            <p>
-                As much as Kolumbao is a casual chat and fun place to be, we 
-                do have guidelines on branding and design. Here are the correlating
-                logos for Kolumbao, alongside each channels theme colour (where
-                applicable).
-            </p>
-            
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <h5 class="semibold">
-                        Gradient Background
-                    </h5>
-                    <div class="row">
-                        <div class="col-8">
-                            <img src="/img/logo_nom_blanc_degrade.png" alt="" width="100%">
-                        </div>
-                        <div class="col-4">
-                            <img src="/img/logo_blanc.png" alt="" width="100%">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 pt-3 pt-md-0">
-                    <h5 class="semibold">
-                        Gradient Foreground
-                    </h5>
-                    <div class="row">
-                        <div class="col-8">
-                            <img src="/img/logo_nom.png" alt="" width="100%">
-                        </div>
-                        <div class="col-4">
-                            <img src="/img/logo_pdp.png" alt="" width="100%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h5 class="semibold pt-5">
-                Brand Colors
-            </h5>
-            <p>
-                A linear gradient with the points <code>.accent-0</code>,
-                <code>.accent-1</code> and <code>.accent-2</code> is the
-                color definition of the logo. Secondary colors are used
-                for certain extra elements.
-            </p>
-            <div class="row">
-                <div class="col text-dark bg accent-0 p-3 m-1">
-                    <h6 class="semibold">.accent-0</h6>
-                    <code class="text-dark">#d9a566</code>
-                </div>
-                <div class="col text-light bg accent-1 p-3 m-1">
-                    <h6 class="semibold">.accent-1</h6>
-                    <code class="text-light">#d9309e</code>
-                </div>
-                <div class="col text-light bg accent-2 p-3 m-1">
-                    <h6 class="semibold">.accent-2 & .secondary-0</h6>
-                    <code class="text-light">#4a1fa6</code>
-                </div>
-                <div class="col text-light bg secondary-1 p-3 m-1">
-                    <h6 class="semibold">.secondary-1</h6>
-                    <code class="text-light">#0583f2</code>
-                </div>
-            </div>
-
-
-            <h5 class="semibold pt-5">
-                Channel colors
-            </h5>
-            <div class="row">
-                <div class="col text-dark bg general p-3 m-1">
-                    <h6 class="semibold">General (All languages)</h6>
-                    <code class="text-dark">#b6d8f2</code>
-                </div>
-                <div class="col text-light bg nsfw p-3 m-1">
-                    <h6 class="semibold">NSFW</h6>
-                    <code class="text-light">#ff4d43</code>
-                </div>
-            </div>
-
-            <h5 class="semibold pt-5">
-                Advertising
-            </h5>
-            <p>If you wish to advertise Kolumbao, here are some resources (these will likely update soon)</p>
-            <div class="row">
-                <div class="col bg gray p-3 m-1">
-                    <h6 class="semibold">English</h6>
-                    <pre style="white-space: pre-wrap;">
-<code>What is Kolumbao?
-
-Kolumbao is a bot that connects countless servers to each other with shared channels, allowing people to talk to each other without being in the same server! But, we don't use clunky embeds, all of your messages are made to be as seamless and integrated as possible, leaving all the work to us and the talking to you!
-
-Join today: https://discord.gg/9UBdZHu
-                        </code>
-                    </pre>
-                </div>
-                <div class="col bg gray p-3 m-1">
-                    <h6 class="semibold">French</h6>
-                    <pre style="white-space: pre-wrap;">
-<code>Hé, je vais vous montrer un excellent robot sous le nom de `Kolumbao`, qui vous permettra de partager facilement et simplement vos publicités. Par conséquent, ce robot est complètement différent des autres robots, la plus part utilisent des embeds, or, nous utilisons des webhooks :3
-
-:heavy_plus_sign: ** __ Avantages: __ **
-
-• Aucune restriction de serveur
-• Détection automatique des liens
-• Bloque les publicités malveillantes
-• Et découvrez de nombreuses autres fonctionnalités
-
-:globe_with_meridians: ** https://kolumbao.com/
-:rocket: https://discord.gg/pQ2xHDa**
-                        </code>
-                    </pre>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="footer" class="border-top">
-        <div class="container pt-3 pb-5">
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                    <h6 class="bold">Useful links</h6>
-                    <p class="mb-0">
-                        <a href="#get-started">Installation</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://discord.gg/9UBdZHu">Support server</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">Invite the bot</a>
-                    </p>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                    <h6 class="bold">Contribute</h6>
-                    <p class="mb-0">
-                        <a href="https://github.com/Kolumbao/translations">Translation</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://discord.gg/9UBdZHu">Suggest ideas</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://ko-fi.com/discordstars">Donate</a>
-                    </p>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                    <h6 class="bold">Find us</h6>
-                    <p class="mb-0">
-                        <a href="https://github.com/Kolumbao">GitHub</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://top.gg/bot/705422266649018398">top.gg</a>
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://instagram.com/kolumbao">Instagram</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid bar border-top py-3">
-            <div class="container d-flex justify-content-between align-items-center">
-               <p class="my-auto link-unstyled">
-                    <a href="https://ko-fi.com/discordstars"> Made with <i class="fas fa-heart" aria-hidden="true"></i></a>
-                </p>
-                <a href="#">
-                    <img src="img/logo_nom_noir_clair.png" alt="" height="35">
+            <p>Over <strong><span id="messages-count">0</span></strong> messages received and <strong><span id="sentmessages-count">0</span></strong> delivered.</p>
+            <div>
+                <a name="getting-started" id="getting-started" class="btn" href="#started" role="button">
+                    Getting started
                 </a>
-                <p class="my-auto"><i class="fas fa-tag" aria-hidden="true"></i> Version 1.7.5</p>
+                <a name="more-info" id="more-info" class="btn btn-outline-secondary" href="#features" role="button">
+                    More info
+                </a>
+                <a name="invite-button" id="invite-button" class="btn btn-secondary" href="#" role="button" target="_blank">
+                    <span id="invite-button-text">Loading invite</span> <i class="ri-discord-fill"></i>
+                </a>
             </div>
         </div>
-    </section>
+        <div class="col-lg-5 col-12 d-flex" id="lead-media">
+            <!-- <iframe src="https://discord.com/widget?id=457205628754984960&theme=dark" width="300px" height="300px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
+            <img src="/marginalia-765.png" alt="" width="300px">
+        </div>
+    </div>
+
+    <div class="w-100 cont" id="features">
+        <h2>Why Kolumbao is great</h2>
+        <p class="description">
+            Kolumbao is in actively developed bot with many features, ranging
+            from auto-moderation to customizable channels. Create a channel
+            and add as many servers as you want to it, lock it with a password,
+            give it a nice description or even write some rules! It's up to
+            you.
+        </p>
+        <div class="row">
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-0">
+                    <i class="ri-community-fill"></i>
+                </div>
+                <h4 class="title">
+                    Community-led content
+                </h4>
+                <p class="content">
+                    All of our channels are community suggested or created, and
+                    you can create your own!
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-1">
+                    <i class="ri-reply-fill"></i>
+                </div>
+                <h4 class="title">
+                    Edits and replies
+                </h4>
+                <p class="content">
+                    Edits and replies are fully integrated, meaning any edit
+                    you make or any message you reply to is shown across all
+                    connected servers.
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-2">
+                    <i class="ri-customer-service-2-fill"></i>
+                </div>
+                <h4 class="title">
+                    Reactive staff
+                </h4>
+                <p class="content">
+                    Our staff are active and on around the clock. With both
+                    English and French speakers available, we can ensure all
+                    content respect our rules and Discord&trade;'s rules.
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-1">
+                    <i class="ri-robot-fill"></i>
+                </div>
+                <h4 class="title">
+                    Automated moderation
+                </h4>
+                <p class="content">
+                    We have a range of protections to prevent users from
+                    spamming or raiding the Kolumbao network, and filters to
+                    stop any unwarranted content.
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-2">
+                    <i class="ri-markup-line"></i>
+                </div>
+                <h4 class="title">
+                    Native experience
+                </h4>
+                <p class="content">
+                    Unlike other interserver platforms, Kolumbao makes messages
+                    look clean and natural, no clunky embeds or bot messages.
+                </p>
+            </div>
+
+            <div class="feature col-12 col-md-6 col-lg-4">
+                <div class="icon icon--accent-0">
+                    <i class="ri-compasses-2-line"></i>
+                </div>
+                <h4 class="title">
+                    Easy to setup
+                </h4>
+                <p class="content">
+                    We keep it simple. Creating your own shared channels is
+                    easy, and installing new shared channels is even easier!
+                </p>
+            </div>
+        </div>
+    </div>
+
     
+    <div class="w-100 cont" id="started">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2>Getting started</h2>
+                <p>Getting started is easy! Just follow these three easy steps:</p>
+                <ol>
+                    <li>
+                        Invite the bot
+                        <a
+                            href="https://discord.com/oauth2/authorize?client_id=705422266649018398&permissions=536881200&scope=bot">with
+                            this link.
+                        </a>
+                    </li>
+                    <li>
+                        We recommend you install the flagship channel, <strong>kb-general</strong>.
+                        Do so with <em>kb!join kb-general</em>.
+                    </li>
+                    <li>
+                        Start talking! Your messages will begin to show up on other servers, try say
+                        hello!
+                    </li>
+                </ol>
+            </div>
+            <div class="col-12 col-md-6 d-none d-md-flex justify-content-end">
+                <img src="/img/logo/icon.svg" alt="" height="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 cont" id="top">
+        <h2 class="top-title">Top shared channels</h2>
+        <p class="top-description">
+            These are the most popular channels (by message count) across our bot.
+        </p>
+        <div class="row pb-4" id="top-channels">
+            <p>Loading...</p>
+        </div>
+        <h3 class="top-title">Hottest channels <i class="ri-fire-fill"></i></h3>
+        <p class="top-description">
+            These channels have the most new messages in the last week.
+        </p>
+        <div class="row" id="hot-channels">
+            <p>Loading...</p>
+        </div>
+
+        <small>
+            *Do not try to refresh to see updates. These are only updated every
+            60 seconds and you may be ratelimited if you spam.
+        </small>
+    </div>
+
+    <!-- <div class="w-100 cont" id="branding">
+        <h2>Branding</h2>
+        <p>
+            Kolumbao is meant to be simple and recognizable, that's why we have
+            a simple logo and eye-catching color scheme.
+        </p>
+        <div class="row">
+            <div class="col-md-6 col-12 pb-3 pb-md-0">
+                <h3>Colors</h3>
+                <p>
+                    Kolumbao has a few variants of its logo and a tricolor color scheme,
+                    as well as 2 gradients used on the logos.
+                </p>
+                <img src="/img/logo/coloursguide.svg" alt="" width="100%">
+            </div>
+            <div class="col-md-6 col-12 pb-3 pb-md-0">
+                <h3>Logos</h3>
+                <p>
+                    There are 3 variants of the "worded" logo, one of which is
+                    at the top of this page.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                    <div style='width: 50%;'>
+                        <img src="/img/logo/blackname.svg" alt="" width="100%">
+                        <img src="/img/logo/fullblack.svg" alt="" width="100%">
+                        <img src="/img/logo/fullgrey.svg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 pb-3 pb-md-0">
+                <h3>Icon</h3>
+                <p>
+                    Kolumbao has 2 icons too, each usable in different contexts.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="d-flex justify-content-between" style='width: 50%;'>
+                        <img src="/img/logo/icon.svg" alt="" width="30%">
+                        <img src="/img/logo/invertedicon.svg" alt="" width="60%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="w-100 cont cont--small border-top d-flex justify-content-between" id="footer">
+        <p>Made with <i class="ri-heart-fill" style="color: #E74C3C;"></i></p>
+        <small>Lead illustration by <a href="undefined">Natasha Remarchuk</a> from <a href="https://icons8.com/">Icons8</a></small>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="js/stats.js?v-202008131501"></script>
+    <script src="js/top.js"></script>
+    <script src="js/invite.js"></script>
 </body>
+
+</html>

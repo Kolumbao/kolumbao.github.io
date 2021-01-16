@@ -1,0 +1,71 @@
+@import 'breakpoints';
+@import 'colors';
+
+.navbar {
+    #toggle i {
+        font-size: 1.6em;
+    }
+}
+
+#lead {
+    text-align: center;
+    padding-top: 5em;
+
+    background-color: lighten($color: $accent-1, $amount: 20%);
+    
+    @media (min-width: $breakpoint-md) {
+        text-align: left;
+        padding-top: none;
+    }
+
+
+    #lead-title {
+        font-size: 3em;
+        // color: white;
+    }
+
+
+    #lead-text {
+        font-size: 1.5em;
+        // color: lighten($color: #646369, $amount: 50%);
+    }
+
+    #lead-media {
+        justify-content: center;
+        
+        @media (min-width: $breakpoint-lg) {
+            justify-content: flex-end;
+            text-align: left;
+        }
+    }
+
+    #getting-started {
+        color: #fff;
+        background-color: $accent-1;
+        border-color: $accent-1;
+    
+        &:hover {
+            color: #fff;
+            background-color: darken($color: $accent-1, $amount: 10%);
+            border-color: darken($color: $accent-1, $amount: 10%);
+        }
+    }
+
+    #invite-button {
+        color: #fff;
+        background-color: $accent-0;
+        border-color: $accent-0;
+        
+        &:hover {
+            color: #fff;
+            background-color: darken($color: $accent-0, $amount: 10%);
+            border-color: darken($color: $accent-0, $amount: 10%);
+        }
+
+        i {
+            font-weight: 100;
+            vertical-align: middle;
+        }
+    }
+
+}

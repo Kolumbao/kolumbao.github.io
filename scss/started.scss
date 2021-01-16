@@ -1,0 +1,13 @@
+@import 'colors';
+
+#started {
+    background-color: lighten($color: $accent-0, $amount: 10%);
+
+    h2 {
+        color: white;
+    }
+
+    p, li {
+        color: lighten($color: #646369, $amount: 60%)
+    }
+}

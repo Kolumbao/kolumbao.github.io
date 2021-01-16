@@ -1,0 +1,23 @@
+@import 'colors';
+
+
+#footer {
+    p {
+        margin-bottom: 0;
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
+// #top {
+//     background-color: lighten($color: $accent-0, $amount: 10%);
+
+//     .top-title {
+//         color: white;
+//     }
+
+//     .top-description {
+//         color: lighten($color: #646369, $amount: 50%)
+//     }
+// }
